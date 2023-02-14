@@ -56,10 +56,10 @@ public class CustomerController {
         }
     }
 
-    @DeleteMapping("/customers/{id}")
-    public ResponseEntity<HttpStatus> deleteCustomer(@PathVariable String id) {
+    @DeleteMapping("/customers/{mobileNo}")
+    public ResponseEntity<HttpStatus> deleteCustomer(@PathVariable String mobileNo) {
         try {
-            Customer customer = customerService.deleteCustomer(id);
+            Customer customer = customerService.deleteCustomer(mobileNo);
             if (customer == null) {
                 return new ResponseEntity<>(HttpStatus.NOT_FOUND);
             }
