@@ -1,7 +1,6 @@
 package in.parasgargsrm.springboot.entity;
 
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.data.mongodb.core.mapping.MongoId;
 
 import javax.persistence.Id;
 
@@ -9,7 +8,6 @@ import javax.persistence.Id;
 public class Customer {
 
     @Id
-    @MongoId
     private String id;
 
     private String name;
