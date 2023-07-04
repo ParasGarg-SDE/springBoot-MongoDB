@@ -34,7 +34,7 @@ public class CustomerService {
         customer.setName(newCustomerInfo.getName());
         customer.setAge(newCustomerInfo.getAge());
         customer.setOccupation(newCustomerInfo.getOccupation());
-        customer.setdOB(newCustomerInfo.getdOB());
+        customer.setDOB(newCustomerInfo.getDOB());
         customer.setMobileNo(newCustomerInfo.getMobileNo());
         customer.setAddress(newCustomerInfo.getAddress());
         return customerRepo.save(customer);
